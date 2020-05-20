@@ -64,7 +64,7 @@ if __name__=='__main__':
     display = [img, motion_blurring_image, motion_blur_gassian_image,inverse_filter_img, wiener_filter_img, inverse_filter2]
     label = ['Original Image', 'Motion Blurred Image', 'Motion Blurring + Gaussian Noise', 'Inverse Filter Applied' ,'Wiener Filter applied', 'Inverse Filter Applied 2']
 
-    fig = plt.figure(figsize=(20, 10))
+    fig = plt.figure(figsize=(18, 10))
 
     for i in range(len(display)):
         fig.add_subplot(2, 3, i+1)
