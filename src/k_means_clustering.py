@@ -16,7 +16,6 @@ def kmeans_clustering(image, K):
         D = cdist(X, centers)    
         labels = np.argmin(D, axis = 1)
         new_centers = kmeans_update_centers(X, labels, K)
-        
         if np.any(new_centers == centers) == True:
             break
         centers = new_centers
